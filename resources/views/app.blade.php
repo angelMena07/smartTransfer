@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+
+        <title>SmartTransfers</title>
+        <link rel="icon" type="img/png" href="{{ asset('assets/img/smart.png') }}"/>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+        <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
+
 
     </head>
     <body>
-        @yield('sidebar')
+
+            @yield('sidebar')
+
+
         <div>
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -29,14 +35,13 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
+            <div>
                 @yield('content')
             </div>
 
         </div>
         <footer>
-            @yield('footer')
+            @extends('includes.footer')
         </footer>
 
     </body>

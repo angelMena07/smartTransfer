@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(rgba(84, 93, 220, .9), rgba(96, 171, 245, .9)), url(../img/cancun.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+#contenedor-titulo-flex {
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+}

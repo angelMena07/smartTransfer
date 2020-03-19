@@ -10,6 +10,3 @@
 @endsection
 
 
-@section('footer')
-@extends('includes.footer')
-@endsection
